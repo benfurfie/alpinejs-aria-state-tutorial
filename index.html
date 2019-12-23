@@ -16,11 +16,20 @@
         
         <main class="container mx-auto py-10 px-4">
             <div class="relative">
-              
-                <button class="bg-blue-400 hover:bg-blue-500 focus:bg-blue-500 text-white px-4 py-2 rounded shadow hover:shadow-lg focus:shadow-lg mb-2">
+            
+                <button
+                    class="bg-blue-400 hover:bg-blue-500 focus:bg-blue-500 text-white px-4 py-2 rounded shadow hover:shadow-lg focus:shadow-lg mb-2"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    role="button"
+                    id="dropdownButton"
+                >
                     Open
                 </button>
-                <div class="bg-white rounded shadow absolute">
+                <div
+                    class="bg-white rounded shadow absolute"
+                    aria-labelledby="dropdownButton"
+                >
                     <ul class="leading-loose">
                         <li class="hover:bg-gray-200">
                             <a class="inline-flex px-4 py-2" href="#">Menu Item One</a>
@@ -33,7 +42,7 @@
                         </li>
                     </ul>
                 </div>
-              
+            
             </div>
         </main>
 
