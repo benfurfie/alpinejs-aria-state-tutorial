@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AlpineJS | ARIA state example</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            button {
+                transition: all 150ms ease-in-out;
+            }
+        </style>
+    </head>
+    <body class="font-sans antialiased text-gray-900 bg-gray-100">
+        
+        <main class="container mx-auto py-10 px-4">
+            <div class="relative">
+              
+                <button class="bg-blue-400 hover:bg-blue-500 focus:bg-blue-500 text-white px-4 py-2 rounded shadow hover:shadow-lg focus:shadow-lg mb-2">
+                    Open
+                </button>
+                <div class="bg-white rounded shadow absolute">
+                    <ul class="leading-loose">
+                        <li class="hover:bg-gray-200">
+                            <a class="inline-flex px-4 py-2" href="#">Menu Item One</a>
+                        </li>
+                        <li class="hover:bg-gray-200">
+                            <a class="inline-flex px-4 py-2" href="#">Menu Item Two</a>
+                        </li>
+                        <li class="hover:bg-gray-200 border-t border-gray-300">
+                            <a class="inline-flex px-4 py-2" href="#">Menu Item Three</a>
+                        </li>
+                    </ul>
+                </div>
+              
+            </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.1.0/dist/alpine.min.js" defer></script>
+    </body>
+</html>
